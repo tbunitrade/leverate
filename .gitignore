@@ -41,8 +41,5 @@ Thumbs.db
 
 #ignore next folder
 .idea
-themes/leverate/node_modules
-themes/leverate/dummy
-themes/twentyfifteen
-themes/twentyseventeen
-themes/twentysixteen
+node_modules
+dummy

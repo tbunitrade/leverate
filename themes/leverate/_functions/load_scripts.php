@@ -35,7 +35,7 @@ function leverate_register_all_scripts_and_styles() {
 
 
 }
-add_action('wp_enqueue_scripts', 'leverate_register_all_scripts_and_styles');
+add_action('init', 'leverate_register_all_scripts_and_styles');
 // ===================================================
 // ==== Load All Scripts & Styles  ===================
 // ===================================================
@@ -70,21 +70,24 @@ add_action( 'wp_enqueue_scripts', 'leverate_load_all_scripts_and_styles' );
 //// =====================================================
 //// ==== Load Admin Scripts & Styles  ===================
 //// =====================================================
-//function load_admin_styles() {
-//    wp_enqueue_style( 'admin_css');
-//}
-//add_action( 'admin_enqueue_scripts', 'load_admin_styles' );
-///**
-// * Registers an editor stylesheet for the theme.
-// */
-//function wpdocs_theme_add_editor_styles() {
-//    add_editor_style( 'admin.css' );
-//}
-//add_action( 'admin_init', 'wpdocs_theme_add_editor_styles' );
-//// =====================================================
-//// ==== Remove WP Embed JS  ============================
-//// =====================================================
-//function my_deregister_scripts(){
-//    wp_deregister_script( 'wp-embed' );
-//}
-//add_action( 'wp_footer', 'my_deregister_scripts' );
+function load_admin_styles() {
+    wp_enqueue_style( 'admin_css');
+}
+add_action( 'admin_enqueue_scripts', 'load_admin_styles' );
+
+/**
+ * Registers an editor stylesheet for the theme.
+ */
+function wpdocs_theme_add_editor_styles() {
+    add_editor_style( 'admin.css' );
+}
+add_action( 'admin_init', 'wpdocs_theme_add_editor_styles' );
+
+
+// =====================================================
+// ==== Remove WP Embed JS  ============================
+// =====================================================
+function my_deregister_scripts(){
+    wp_deregister_script( 'wp-embed' );
+}
+add_action( 'wp_footer', 'my_deregister_scripts' );

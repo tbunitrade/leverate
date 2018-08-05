@@ -18,22 +18,31 @@
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="icon" type="image/png" href="<?php echo get_template_directory_uri() ?>/app/dist/img/favicon/favicon.png" />
 
-
 <?php wp_head(); ?>
 </head>
 
 <body id="body">
-    <div class="container-fluid">
+    <div class="container">
 
-        <header id="header" class="headerForSearch" >
-            <div class="navbar  header-menu">
-                <div class="row containerForFixedHeader">
-                    <div class="col-xs-12 col-md-12 col-lg-4 firstXs">
+        <header id="header" class="header">
+
+                <div class="row">
+                    <div class="col-xs-12 col-md-12 col-lg-4 ">
                         <a href="/"><div class="logo"> </div></a>
                     </div>
                     <!-- Start of menu -->
-                    <div class="col-xs-12 col-md-12 col-lg-8 secondXs">
-                        <?php wp_nav_menu( $args);?>
+                    <div class="col-xs-12 col-md-12 col-lg-8 ">
+                        <?php wp_nav_menu( array (
+                                'menu'              => 'primary',
+                                'theme_location'    => 'primary',
+                                'depth'             => 2,
+                                'container'         => 'div',
+                                'container_class'   => 'collapse navbar-collapse pcMenu',
+                                'container_id'      => 'bs-example-navbar-collapse-1',
+                                'menu_class'        => 'nav navbar-nav',
+                                'fallback_cb'       => 'WP_Bootstrap_Navwalker::fallback',
+                                //'walker'            => new WP_Bootstrap_Navwalker())
+                        ));?>
                     </div>
 
                     <!-- end of menu -->

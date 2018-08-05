@@ -38,27 +38,27 @@ if (function_exists('register_sidebar')) {
 //        'before_widget' => '<div class="login-container">',
 //        'after_widget' => '</div>'
 //    ));
-    register_sidebar ( array (
-        'name' => 'searchme',
-        'id' => 'searchme',
-        'description' => 'searchme',
-        'before_widget' => '<div class="searchBox">',
-        'after_widget' => '</div>'
-    ));
-    register_sidebar ( array (
-        'name' => '404 page sidebar',
-        'id' => 'sidebar404',
-        'description' => 'searchme',
-        'before_widget' => '<div class="sidebar404">',
-        'after_widget' => '</div>'
-    ));
-    register_sidebar ( array (
-        'name' => 'New Sidebar',
-        'id' => 'newsidebar',
-        'description' => 'searchme',
-        'before_widget' => '<div class="newtagCont">',
-        'after_widget' => '</div>'
-    ));
+//    register_sidebar ( array (
+//        'name' => 'searchme',
+//        'id' => 'searchme',
+//        'description' => 'searchme',
+//        'before_widget' => '<div class="searchBox">',
+//        'after_widget' => '</div>'
+//    ));
+//    register_sidebar ( array (
+//        'name' => '404 page sidebar',
+//        'id' => 'sidebar404',
+//        'description' => 'searchme',
+//        'before_widget' => '<div class="sidebar404">',
+//        'after_widget' => '</div>'
+//    ));
+//    register_sidebar ( array (
+//        'name' => 'New Sidebar',
+//        'id' => 'newsidebar',
+//        'description' => 'searchme',
+//        'before_widget' => '<div class="newtagCont">',
+//        'after_widget' => '</div>'
+//    ));
 }
 // ===================================================
 // ==== Register Main Menu ===========================
@@ -70,15 +70,15 @@ if (function_exists('register_nav_menus')) {
     register_nav_menus( array(
         'secondary' => __( 'secondary', 'Secondary Menu' ),
     ) );
-    register_nav_menus( array(
-        'third' => __( 'Third menu', 'third Menu' ),
-    ) );
-    register_nav_menus( array(
-        'fourth' => __( 'Fourth menu', 'fourth Menu' ),
-    ) );
-    register_nav_menus ( array (
-        'login' => __('login','login menu'),
-    ) );
+//    register_nav_menus( array(
+//        'third' => __( 'Third menu', 'third Menu' ),
+//    ) );
+//    register_nav_menus( array(
+//        'fourth' => __( 'Fourth menu', 'fourth Menu' ),
+//    ) );
+//    register_nav_menus ( array (
+//        'login' => __('login','login menu'),
+//    ) );
 }
 // ===================================================
 // ==== Add theme support ============================

@@ -1,0 +1,28 @@
+/*
+Theme Name: leverate test theme
+Theme URI: https://leverate.com/
+Author: Oleksandr Sonich
+Author URI: https://создание-сайтов.укр
+Description: First project, test theme were main idea is the understaning idea of test task.
+
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: leverate
+Tags: leverate
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+/*--------------------------------------------------------------
+>>> original style look in folder app:
+
+--------------------------------------------------------------*/
+/*wp-menu-image dashicons-before*/
+.dashicons-admin-generic:before {
+    background: url("app/dist/img/favicon/favicon-original.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center  ;
+    color: transparent!important;
+}

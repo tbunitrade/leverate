@@ -1,5 +1,85 @@
 /*modal template*/
-.modal {
+.myForm {
+  width: 100%;
+  display: block;
+  max-width: 520px;
+  margin: 0 auto;
 
+  fieldset {
+    position: relative;
+    width: 100%;
+    display: block;
+    vertical-align: top;
+    max-width: 320px;
+    margin: 0 auto;
+    padding-top: 15px;
+    margin-bottom: 10px;
+    
+    label {
+      display: none;
+      position: absolute;
+      left: 0;
+      top: 0px;
+      color: red;
+      font-size: 10px;
+    }
+
+    input {
+      width: 100%;
+      display: inline-block;
+      vertical-align: top;
+      max-width: 320px;
+      background: transparent;
+      border: none;
+      padding-left: 15px;
+      line-height: 38px ;
+      height: 38px;
+      border-bottom: 1px solid #ccc;
+
+
+    }
+
+    .check {
+      width: 100%;
+      max-width: 200px;
+      height: auto;
+      display: block;
+      margin: auto;
+      border-bottom: none;
+      padding: 10px;
+      position: relative;
+
+
+      label {
+        display: none;
+        color: red;
+        position: absolute;
+        top:50%;
+        left: 50%;
+        transform: translate(-50%,77%);
+
+      }
+
+      input{
+        border: none;
+        text-transform: uppercase;
+        border-radius: 30px;
+
+      }
+    }
+  }
+
+  fieldset {
+    outline: 1px solid red;
+    padding: 10px 0px 10px;
+    button {
+      outline: 1px solid green;
+      height: 150px;
+    }
+  }
 }
 
+
+.redbackground {
+  background: red;
+}
