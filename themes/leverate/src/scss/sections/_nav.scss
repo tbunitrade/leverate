@@ -1,0 +1,304 @@
+/*Header MAIN style*/
+.navbar-collapse {
+  box-shadow: none;
+}
+
+.mainMenuContainer{
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+  z-index: 10000;
+
+
+  @media (min-width: $screen-sm-min) {
+    max-width: 620px;
+  }
+
+  @media (min-width: $screen-md-min) {
+
+  }
+
+  @media (min-width: $screen-lg-min) {
+    max-width: 850px;
+    max-width: unset;
+    float: left;
+  }
+
+  @media (min-width: 1620px) {
+    max-width: 891px;
+  }
+
+  .navbar-header {
+    margin: 0;
+  }
+
+  .in {
+    //background: $white;
+    margin: 0;
+    //z-index: 9;
+    //position: relative;
+  }
+}
+.nav {
+  z-index: 99999;
+  position: relative;
+
+}
+
+.navbar {
+  min-height: 35px;
+  padding-top: 7px;
+  z-index: 10;
+}
+
+
+
+.mobileMenu {
+  display: inline-block;
+
+  @media (min-width: $screen-md-min) {
+    display: none;
+  }
+}
+
+.navbar-toggle {
+  float: left;
+  margin-left: 0px;
+}
+
+.navbar-default {
+  background: transparent!important;
+  background-color: transparent!important;
+  border: none;
+  margin-bottom: 0;
+  position: relative;
+  //top:15px;
+  max-width: 602px;
+
+
+
+  @media (min-width: $screen-md-min) {
+    //top:5px;
+    max-width: 1022px;
+  }
+
+  a {
+    background-color: transparent!important;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+
+
+.navbar-default .navbar-nav>.active>a,
+.navbar-nav>.active>a,
+.navbar-nav>li>a {
+  color: $footerbg!important;
+  background-color: transparent!important;
+}
+
+.in {
+
+  .nav {
+    background: $white;
+  }
+
+}
+
+.pcMenu {
+  width: 100%;
+  display: none;
+  max-width: 602px;
+  padding: 0;
+
+
+  .nav {
+    float: none;
+    padding: 0px 15px;
+    margin: 0;
+
+  }
+
+  @media (min-width: $screen-md-min) {
+    display: inline-block;
+    max-width: 1022px;
+    background: transparent;
+  }
+
+
+
+  .menu-item {
+    color: $menuitem;
+    font-size: 18px;
+    font-family: "BloggerSans";
+    font-weight: 500;
+    text-transform: uppercase;
+    list-style-type: none;
+
+    position: relative;
+
+    @media (min-width: $screen-sm-min) {
+      text-decoration: none;
+    }
+
+    a {
+      color: $footerbg;
+      font-size: 18px;
+      font-weight: 500;
+      margin: 0;
+      padding: 0;
+      line-height: 24px;
+      text-decoration: none;
+      font-family: 'BloggerSans';
+
+      &:hover{
+        text-decoration: none;
+      }
+
+      &:after{
+
+        @media (min-width: $screen-sm-min) {
+          background: $menuitemhover;
+          width: 100%;
+          bottom: -3px;
+          position: absolute;
+          display: none;
+          height:3px;
+          content: '';
+        }
+
+      }
+    }
+
+    @media (min-width: $screen-sm-min) {
+      text-decoration: none;
+      margin: 0px 20px;
+    }
+
+    @media (min-width: $screen-md-min) {
+      margin: 0px 22px;
+    }
+
+    @media (min-width: $screen-lg-min) {
+      margin: 0px 40px;
+      margin: 0 4%;
+    }
+
+    &:hover {
+
+      &:after{
+        display: block;
+      }
+    }
+
+    .submenu {
+      display: none;
+      position: absolute;
+      left: 0px;
+      top:20px;
+      width: 100%;
+      max-width: 300px;
+
+      li {
+        width: 200px;
+        display: block;
+        margin: 10px 0px;
+      }
+    }
+
+    &:hover {
+      .submenu {
+        display: block;
+      }
+    }
+    /**/
+  }/*end of menu item*/
+
+  .navbar-nav>li>a {
+
+    &:hover {
+
+      &:after {
+        display: block;
+      }
+    }
+  }
+
+  .current-menu-item {
+    position: relative;
+
+    @media (min-width: $screen-sm-min) {
+      &:after{
+        background: $menuitemhover;
+        width: 100%;
+        bottom: -3px;
+        position: absolute;
+        height:3px;
+        content: '';
+        left: 0;
+      }
+    }
+
+
+  }
+}
+
+#menu-secondary-menu {
+
+  &:hover {
+
+    a {
+
+      &:after {
+        display: none;
+      }
+    }
+  }
+}
+
+.navbar-fixed-top {
+  z-index: 1000000;
+  background: $white!important;
+  position: fixed;
+  width: 100%;
+  max-width: unset;
+  padding-bottom: 10px;
+
+  @media (min-width: $screen-md-min) {
+    padding-left: 20px;
+  }
+
+  .menu-item {
+    a {
+      color: $menuitem!important;
+    }
+  }
+
+  .containerForFixedHeader {
+    width: 100%;
+    max-width: 1263px;
+    max-width: 1283px;
+    display: block;
+    margin: auto;
+  }
+
+  .firstXs {
+    padding-left: 0;
+  }
+
+  .secondXs {
+   max-width: 941px;
+  }
+}
+
+.logomove {
+
+  .pcMenu {
+    position: fixed;
+    z-index: 1000000;
+  }
+}

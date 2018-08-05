@@ -1,0 +1,36 @@
+/*Header MAIN style*/
+header {
+
+
+  @media (min-width: $screen-md-min) {
+
+  }
+
+  .logo {
+    background-image: url("../img/icons/leverate-logo-l.png");
+    background-repeat: no-repeat;
+    width: 182px;
+    height: 32px;
+    display: block;
+    margin: auto;
+    background-position: center center;
+
+    @media (min-width: 1200px) {
+      float: left;
+    }
+
+
+    @media (min-width: 1350px) {
+      left: 0px;
+      position: relative;
+    }
+
+    @media (min-width: 1850px) {
+      left: 187px;
+      left: 94px;
+      left: 18%;
+      left: 0;
+      position: relative;
+    }
+  }
+}/*end of header*/

@@ -1,0 +1,1 @@
+{"version":3,"sources":["custom.js"],"names":["$","document","ready","console","log"],"mappings":"AAAAA,EAAEC,UAAUC,MAAO,WAEjBC,QAAQC,IAAI","file":"dist.js","sourcesContent":["$(document).ready( function(){\r\n\r\n  console.log('Sharon hello, Dom load with no error');\r\n\r\n\r\n});"]}

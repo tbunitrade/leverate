@@ -1,0 +1,129 @@
+  body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    height: 100%;
+    color: $black;
+    line-height: 16px;
+    position: relative;
+    transition: 0.27s;
+  }
+
+  #body {
+    padding: 0!important;
+  }
+
+  .container-fluid {
+    padding: 0;
+
+    @media (min-width: $screen-lg-min) {
+
+    }
+  }
+
+  .wrapper {
+    width: 100%;
+    max-width: 960px;
+    min-width: 319px;
+    margin: auto;
+    display: block;
+    outline: 0px solid red;
+  }
+
+  .clear {
+    clear: both;
+  }
+
+  .container {
+
+    @media (min-width: $screen-md-min) {
+
+    }
+  }
+
+  * {
+      outline: 0px solid red;
+  }
+
+  a {
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+
+  .site-main {
+    display: block;
+    margin: auto;
+    width: 100%;
+   /* max-width: 690px;*/
+
+    .woocommerce-result-count {
+      display: none;
+    }
+
+    header {
+      //padding-top: 10px;
+      //height: 10px;
+      //height: 0;
+
+      h1 {
+        display: none;
+      }
+    }
+
+    @media (min-width: $screen-sm-min) {
+      /*width: 690px;*/
+    }
+
+    @media (min-width: $screen-md-min) {
+      width: 100%;
+      /*max-width: unset;*/
+    }
+
+  }
+
+/*---------------------------------------
+   Typography
+-----------------------------------------*/
+
+  .row-no-padding [class*="col-"] {
+    padding-left: 0;
+    padding-right: 0;
+    margin-right: 0;
+    margin-left: 0
+  }
+
+  /* HEADINGS */
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  em,
+  span,
+  p{
+    font-family: 'Open Sans', Helvetica;
+    color: $black;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+
+
+
+
+
+
+  @font-face {
+    //font-family: 'FontAwesome';
+    //font-weight: normal;
+    //font-style: normal;
+    //src: url('../fonts/webfonts/fa-regular-400.ttf') format("truetype");
+    //src: url('../fonts/webfonts/fa-solid-900.ttf') format("truetype");
+    //src: url('../fonts/webfonts/fa-brands-400.ttf') format("truetype");
+  }
+
